@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>create account</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    
+    <?php include('index.php')
+        if('isset(submitdata)'){
+            echo "submitted Successfully";
+        }
+    ?>
+ 
+<!--html-->
+    <div class="form_div">
+        <form action="index.php" method="POST">
+            <h2>University db <i class="fa fa-university"></i> </h2> 
+            <p id="p"><a href="login.php">LOGIN</a> <i class="fa fa-user-o"></i></p>
+
+            <input name="firstname" type="text" placeholder="first name" required> <br> <br>
+
+            <input name="lastname" type="text" placeholder="last name" required><br><br>
+
+            <input name="age" type="number" placeholder="Age" required> <br> <br>
+
+            <input name="tel" type="number" placeholder="Tel" required> <br> <br>
+
+            <input name="email" type="email" placeholder="email" required> <br> <br>
+
+            <input type="text" name="user_name" id="" placeholder="user_name" required> <br> <br>
+
+            <input type="password" name="password" placeholder="password" required> <br> <br>
+
+            <button name="submitdata" type="submit">Submit</button>
+        </form>
+    </div>
+
+
+</body>
+</html>

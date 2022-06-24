@@ -1,0 +1,67 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+
+a, #delete{
+    text-decoration: none;
+    color: red;
+}
+
+button{
+    color: black;
+    border: none;
+    font-size: 15px;
+    background: white;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+.fa-pencil{
+    color:blue;
+}
+
+.fa-cloud{
+    color: green;
+}
+
+.fa-trash{
+    color:red;
+}
+
+.head{
+    display: flex;
+    justify-content: space-between;
+}
+
+.main_div{
+    width: 70%;
+    box-shadow: 10px 10px 30px black;
+    margin: 0 auto;
+    margin-top: 30px;
+    padding: 40px;
+}
+
+#icon{
+    font-size: 30px;
+}
+
+.data{
+    width: 90%;
+    align-items: center;
+}
+
+.info{
+    font-size: 30px;
+}
+
+.logout{
+    float: right;
+}
+
+table{
+    text-align: center;
+}

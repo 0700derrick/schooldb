@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>session</title>
+    <link rel="stylesheet" href="session.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css"
+    
+</head>
+
+<body>
+    <div class="main_div">
+        <div class="head">
+            <dir>
+            <i id="icon" class="fa fa-user-circle"></i>
+            </dir>
+            <h2>Welcome User</h2>
+        </div>
+        <br>
+
+        <div class="data">
+                <div>
+                     <form action="">
+                        <button type="submit" name="save"> <i class="fa fa-cloud"> Save</i></button>
+                    </form>
+    <br>
+                    <form action="users.php" method="POST">
+                        <button type="submit" name="delete_info"> <i class="fa fa-trash"> Delete</i></button>
+                    </form>
+                </div>
+<br>
+                <div>
+                    <div class="container">                                
+                        <table class="table">
+                          <thead>
+                            <tr>
+                              <th>First name</th>
+                              <th>Last name</th>
+                              <th>Age</th>
+                              <th>Tel no</th>
+                              <th>Email</th>
+                              <th>Options</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+
+                              <!-- <?php                       
+                                include("connect.php");
+
+                                    
+                                $sql = "SELECT * FROM `teachers_tb`";
+                                $results = mysqli_query($conn, $sql);
+
+                              while($row = mysqli_fetch_assoc($results)){
+                                  echo "<tr>
+                                        <td>".$row['first_name']."</td>
+                                        <td>".$row['last_name']."</td>
+                                        <td>".$row['age']."</td>
+                                        <td>".$row['tel']."</td>
+                                        <td>".$row['email']."</td>
+                                        <td>
+
+                                      <container style='display:flex'>
+                                      <form>
+                                      <button class='fa fa-pencil'  style='background:green; color:white; padding:2px 10px 2px 10px; border-radius:4px; font-size:12px;'> Edit ".$row['id']."</button> &nbsp
+                                      </form>
+
+                                     <form action='users.php' method='POST'>
+                                     <input type='hidden' name='id' value='".$row['id']."'>
+
+                                      <button class='fa fa-trash' style='background:red; color:white; padding:5px; border-radius:4px; font-size:12px;' name='del' type='submit'> Delete ".$row['id']."</button>
+                                      </form>
+                                      </container>
+                                                                             
+                                        </td>
+                                  </tr>";      
+                              };
+
+                                                          //delete
+                              if('isset("del")'){
+                                $id= $_POST['id'];
+                                $sql = "DELETE FROM `teachers_tb` WHERE `id` =$id ";
+                                $results = mysqli_query($conn, $sql);
+                              }
+
+                              else{
+                                 
+                              };
+
+                              ?> -->
+                          </tbody>
+                        </table>
+                      </div>                      
+                </div>
+        </div>
+
+      
+
+        <div class="logout">
+          <form action="#" method="#">
+            <a href="session.html"><button class="fa fa-sign-out">Log Out</button></a>
+          </form>
+        </div>
+    </div>
+
+    
+</body>
+</html>
